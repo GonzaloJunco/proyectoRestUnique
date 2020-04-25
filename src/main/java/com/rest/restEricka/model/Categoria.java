@@ -6,26 +6,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.format.annotation.NumberFormat;
-
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
-@Table(name="persona")
+@Table(name="tbl_categoria")
 @Data
-public class Persona {
+public class Categoria {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer idPersona;
-	
-	private String nombres;
-	private String apellidos;
-	
-	private Integer dni;
-	
+	private Integer idCategoria;
+	private String nombre;
 	
 
 }
